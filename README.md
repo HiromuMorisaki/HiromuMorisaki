@@ -19,16 +19,40 @@ Java / JavaScript 3〜5年の実務をベースに、Swift・LLM API・業務自
 ## 🛠 技術スタック
 
 **iOS**  
-Swift · SwiftUI · SwiftData · WidgetKit · Vision · UserNotifications · EventKit · QuickLook · PDFKit
+![Swift](https://img.shields.io/badge/Swift-FA7343?style=flat&logo=swift&logoColor=white)
+![SwiftUI](https://img.shields.io/badge/SwiftUI-0066FF?style=flat&logo=swift&logoColor=white)
+![SwiftData](https://img.shields.io/badge/SwiftData-0066FF?style=flat&logo=swift&logoColor=white)
+![WidgetKit](https://img.shields.io/badge/WidgetKit-0066FF?style=flat&logo=swift&logoColor=white)
+![Xcode](https://img.shields.io/badge/Xcode-147EFB?style=flat&logo=xcode&logoColor=white)
 
 **AI / 自動化**  
-Claude API · Gemini API · n8n · Dify · Google Apps Script
+![Claude API](https://img.shields.io/badge/Claude_API-D97757?style=flat&logo=anthropic&logoColor=white)
+![Gemini API](https://img.shields.io/badge/Gemini_API-8E75B2?style=flat&logo=googlegemini&logoColor=white)
+![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat&logo=n8n&logoColor=white)
+![Dify](https://img.shields.io/badge/Dify-1C64F2?style=flat)
+![Apps Script](https://img.shields.io/badge/Google_Apps_Script-4285F4?style=flat&logo=googleappsscript&logoColor=white)
 
 **Web / Script**  
-TypeScript · Vue 3 · Python
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue_3-4FC08D?style=flat&logo=vuedotjs&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 
 **その他**  
-Java · JavaScript · Power BI · VBA · Git
+![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=openjdk&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat&logo=powerbi&logoColor=black)
+![VBA](https://img.shields.io/badge/VBA-217346?style=flat)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+
+---
+
+## ⚙️ 業務自動化・AIワークフローの実績
+
+| 技術 | 内容 |
+|------|------|
+| **n8n** | Zenn 等から AI/IT の最新記事を定期取得し、自分の関心属性に合わせて AI で要約 → Discord へ自動配信するキュレーションパイプラインを構築・運用 |
+| **Google Apps Script** | 外部クライアント向けの業務自動化を複数構築：① 自動車整備会社で、受信メールの事故写真を規定レイアウトで自動プリント、② スプレッドシートのエリア名・商品名・位置情報から PowerPoint へオブジェクトと名称を等間隔配置するショールーム用マッピングツール、③ 社内の勤怠・研修管理ツールの改修 |
+| **Dify** | 書籍ハンズオンで RAG チャットボットを5本構築し、RAG 構成の設計を実践 |
 
 ---
 
