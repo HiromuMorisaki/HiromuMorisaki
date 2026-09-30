@@ -12,15 +12,15 @@
 
 すべて **ローカル完結・プライバシー重視**（通信ゼロ・SwiftData によるオンデバイス保存）を基本指針としています。
 
-| アプリ | カテゴリ | 主要技術 | 特徴・実績 |
-|--------|---------|---------|-----------|
-| [**ひと呼吸** — スマホ依存対策・アプリ制限](https://apps.apple.com/jp/app/%E3%81%B2%E3%81%A8%E5%91%BC%E5%90%B8-%E3%82%B9%E3%83%9E%E3%83%9B%E4%BE%9D%E5%AD%98%E5%AF%BE%E7%AD%96-%E3%82%A2%E3%83%97%E3%83%AA%E5%88%B6%E9%99%90/id6810300278) | ヘルスケア／フィットネス · ユーティリティ | SwiftUI · App Intents · SwiftData · Swift Charts · WidgetKit · StoreKit 2 | スクリーンタイム許可不要で起動時に深呼吸を挟む。対象アプリ無制限 |
-| [**ITかるた** — IT用語クイズで楽しく暗記](https://apps.apple.com/jp/app/it%E3%81%8B%E3%82%8B%E3%81%9F-it%E7%94%A8%E8%AA%9E%E3%82%AF%E3%82%A4%E3%82%BA%E3%81%A7%E6%A5%BD%E3%81%97%E3%81%8F%E6%9A%97%E8%A8%98/id6808845036) | 教育 · ゲーム · トリビア | SwiftUI · StoreKit 2 · PDFKit · Swift Charts · XcodeGen | ★ 5.0 ／ 全9パック425問。HTTPステータスコード・Linux等の速答かるた。紙の印刷用PDF書き出し対応 |
-| [**ふるさと納税 台帳** — 上限シミュ＆ワンストップ管理](https://apps.apple.com/jp/app/%E3%81%B5%E3%82%8B%E3%81%95%E3%81%A8%E7%B4%8D%E7%A8%8E-%E5%8F%B0%E5%B8%B3-%E4%B8%8A%E9%99%90%E3%82%B7%E3%83%9F%E3%83%A5-%E3%83%AF%E3%83%B3%E3%82%B9%E3%83%88%E3%83%83%E3%83%97%E7%AE%A1%E7%90%86/id6811728732) | ファイナンス · ユーティリティ | SwiftUI · SwiftData · TDD | 複数ポータル横断の寄付台帳・総務省基準の目安シミュレーション・ワンストップ申請トラッカー |
-| [**コテサク** — 家計簿・節約・サブスク管理](https://apps.apple.com/jp/app/%E5%AE%B6%E8%A8%88%E7%B0%BF-%E7%AF%80%E7%B4%84-%E3%82%B5%E3%83%96%E3%82%B9%E3%82%AF%E7%AE%A1%E7%90%86-%E3%82%B3%E3%83%86%E3%82%B5%E3%82%AF/id6772914926) | ファイナンス · 仕事効率化 | SwiftUI · SwiftData · Vision(OCR) · EventKit · StoreKit 2 | ★ 5.0 ／ 手取り月収から固定費を引いて「今月あと自由に使えるお金」を自動計算・可視化 |
-| [**家づくり管理** — ハウスメーカー比較](https://apps.apple.com/jp/app/%E5%AE%B6%E3%81%A5%E3%81%8F%E3%82%8A%E7%AE%A1%E7%90%86-%E3%83%8F%E3%82%A6%E3%82%B9%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E6%AF%94%E8%BC%83/id6775920878) | ライフスタイル · ユーティリティ | SwiftUI · SwiftData · WidgetKit · PDFKit · Speech/AVFoundation | ハウスメーカーの比較検討・打合せ記録・図面ピンチズーム・端末内AIによる音声文字起こし |
-| [**そなえメモ** — 非常食の備蓄とローリングストック管理](https://apps.apple.com/jp/app/%E3%81%9D%E3%81%AA%E3%81%88%E3%83%A1%E3%83%A2-%E9%9D%9E%E5%B8%B8%E9%A3%9F%E3%81%AE%E5%82%99%E8%93%84%E3%81%A8%E3%83%AD%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E7%AE%A1%E7%90%86%E3%82%A2%E3%83%97%E3%83%AA/id6783843695) | ユーティリティ · ライフスタイル | SwiftUI · SwiftData · UserNotifications | 非常食・防災備蓄の賞味期限管理とローリングストック支援 |
-| [**つむぐノート** — エンディングノート・自分史・やりたいこと](https://apps.apple.com/jp/app/%E3%81%A4%E3%82%80%E3%81%90%E3%83%8E%E3%83%BC%E3%83%88-%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%8E%E3%83%BC%E3%83%88-%E8%87%AA%E5%88%86%E5%8F%B2-%E3%82%84%E3%82%8A%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8/id6784717709) | ライフスタイル · ユーティリティ | SwiftUI · SwiftData · LocalAuthentication · PDFKit · StoreKit 2 | 端末内完結・Face IDロックのエンディングノート＆自分史 |
+| アプリ | 公開版 | カテゴリ | 主要技術 | 特徴・実績 |
+|--------|:----:|---------|---------|-----------|
+| [**ひと呼吸** — スマホ依存対策・アプリ制限](https://apps.apple.com/jp/app/%E3%81%B2%E3%81%A8%E5%91%BC%E5%90%B8-%E3%82%B9%E3%83%9E%E3%83%9B%E4%BE%9D%E5%AD%98%E5%AF%BE%E7%AD%96-%E3%82%A2%E3%83%97%E3%83%AA%E5%88%B6%E9%99%90/id6810300278) | v1.2 | ヘルスケア／フィットネス · ユーティリティ | SwiftUI · App Intents · SwiftData · Swift Charts · WidgetKit · StoreKit 2 | スクリーンタイム許可不要で起動時に深呼吸を挟む。対象アプリ無制限。次版でウィジェット・ライブアクティビティ・英語対応 |
+| [**ITかるた** — IT用語クイズで楽しく暗記](https://apps.apple.com/jp/app/it%E3%81%8B%E3%82%8B%E3%81%9F-it%E7%94%A8%E8%AA%9E%E3%82%AF%E3%82%A4%E3%82%BA%E3%81%A7%E6%A5%BD%E3%81%97%E3%81%8F%E6%9A%97%E8%A8%98/id6808845036) | v1.5 | 教育 · ゲーム · トリビア | SwiftUI · StoreKit 2 · PDFKit · Swift Charts · XcodeGen | ★ 5.0 ／ 全13パック529問。HTTPステータスコード・Linux等の速答かるた。スマート復習・紙の印刷用PDF書き出し対応 |
+| [**ふるさと納税 台帳** — 上限シミュ＆ワンストップ管理](https://apps.apple.com/jp/app/%E3%81%B5%E3%82%8B%E3%81%95%E3%81%A8%E7%B4%8D%E7%A8%8E-%E5%8F%B0%E5%B8%B3-%E4%B8%8A%E9%99%90%E3%82%B7%E3%83%9F%E3%83%A5-%E3%83%AF%E3%83%B3%E3%82%B9%E3%83%88%E3%83%83%E3%83%97%E7%AE%A1%E7%90%86/id6811728732) | v1.0 | ファイナンス · ユーティリティ | SwiftUI · SwiftData · TDD | 複数ポータル横断の寄付台帳・総務省基準の目安シミュレーション・ワンストップ申請トラッカー。次版で医療費・iDeCo等を反映する精密上限モード |
+| [**コテサク** — 家計簿・節約・サブスク管理](https://apps.apple.com/jp/app/%E5%AE%B6%E8%A8%88%E7%B0%BF-%E7%AF%80%E7%B4%84-%E3%82%B5%E3%83%96%E3%82%B9%E3%82%AF%E7%AE%A1%E7%90%86-%E3%82%B3%E3%83%86%E3%82%B5%E3%82%AF/id6772914926) | v1.0.2 | ファイナンス · 仕事効率化 | SwiftUI · SwiftData · Vision(OCR) · EventKit · StoreKit 2 | ★ 5.0 ／ 手取り月収から固定費を引いて「今月あと自由に使えるお金」を自動計算・可視化 |
+| [**家づくり管理** — ハウスメーカー比較](https://apps.apple.com/jp/app/%E5%AE%B6%E3%81%A5%E3%81%8F%E3%82%8A%E7%AE%A1%E7%90%86-%E3%83%8F%E3%82%A6%E3%82%B9%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E6%AF%94%E8%BC%83/id6775920878) | v1.1.0 | ライフスタイル · ユーティリティ | SwiftUI · SwiftData · WidgetKit · PDFKit · Speech/AVFoundation | ハウスメーカーの比較検討・打合せ記録・図面ピンチズーム・端末内AIによる音声文字起こし |
+| [**そなえメモ** — 非常食の備蓄とローリングストック管理](https://apps.apple.com/jp/app/%E3%81%9D%E3%81%AA%E3%81%88%E3%83%A1%E3%83%A2-%E9%9D%9E%E5%B8%B8%E9%A3%9F%E3%81%AE%E5%82%99%E8%93%84%E3%81%A8%E3%83%AD%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E7%AE%A1%E7%90%86%E3%82%A2%E3%83%97%E3%83%AA/id6783843695) | v1.1.0 | ユーティリティ · ライフスタイル | SwiftUI · SwiftData · UserNotifications | 非常食・防災備蓄の賞味期限管理とローリングストック支援。備蓄診断カード・毎月の点検日通知・消費レシピ検索 |
+| [**つむぐノート** — エンディングノート・自分史・やりたいこと](https://apps.apple.com/jp/app/%E3%81%A4%E3%82%80%E3%81%90%E3%83%8E%E3%83%BC%E3%83%88-%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%8E%E3%83%BC%E3%83%88-%E8%87%AA%E5%88%86%E5%8F%B2-%E3%82%84%E3%82%8A%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8/id6784717709) | v1.1 | ライフスタイル · ユーティリティ | SwiftUI · SwiftData · LocalAuthentication · PDFKit · StoreKit 2 | 端末内完結・Face IDロックのエンディングノート＆自分史。デジタル庁デザインシステム準拠・iPad対応 |
 
 ---
 
@@ -72,9 +72,9 @@
 
 | プロジェクト | 概要 | 主要技術 |
 |------------|------|---------|
-| **コミコム** | Amazon・楽天・Yahoo! を横断し、送料・ポイント込みの「実質最安」を比較する iOS アプリ | SwiftUI · SwiftData ＋ **Supabase / サーバーサイド（フルスタック構成）** |
+| **コミコム**（App Store 提出準備中） | Amazon・楽天・Yahoo! を横断し、送料・ポイント込みの「実質最安」を比較する iOS アプリ。Safari 拡張・セール時期の買い時アドバイス | SwiftUI · SwiftData ＋ **Supabase / サーバーサイド（フルスタック構成）** |
 | **現金主義** | 現金貯金をゲーミフィケーションで楽しくする育成アプリ | SwiftUI · SwiftData · StoreKit 2 · CloudKit · Swift Charts · HealthKit |
-| **スパイを見抜け** | 4〜6人で1台のiPhoneを囲んで遊ぶ対面パーティゲーム（旧会話ゲームのスキーマ互換） | SwiftUI · SwiftData |
+| **スパイを見抜け**（App Store 審査中） | 4〜6人で1台のiPhoneを囲んで遊ぶ対面パーティゲーム。全11種・通信ゼロ・AI 不使用 | SwiftUI · SwiftData |
 | **firekeeper-swarm** | ワンサム・サバイバルゲーム試作（iOS向け片手操作アクション） | Swift · SpriteKit |
 | [**portfolio-hub**](https://github.com/HiromuMorisaki/portfolio-hub) | 本ポートフォリオサイト（アプリ別ケーススタディ・アーキ図） | Vue 3 · TypeScript |
 
