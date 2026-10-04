@@ -1,14 +1,25 @@
 # Hiromu Morisaki（森崎 大夢）
 
-> **iOS × AI エンジニア** — AI で高速に ship しつつ、設計・品質は自分で担保する。
+> **iOS アプリ × LLM 自動化 エンジニア** — 課題を見つけ、AI で高速に形にし、設計と品質は自分で握る。
 
-個人で App Store アプリを開発・運用しながら、**① iOS 開発／② AI・業務自動化／③ フルスタック（Web・バックエンド）** の3領域を横断します。Java / JavaScript の実務 3〜5年をベースに、Swift・LLM API・自動化基盤まで一気通貫で扱います。
+法人営業を経てエンジニアへ。**ユーザーに届く iOS アプリ** と、**業務に定着する LLM ワークフロー** の2軸で、課題の発見から実装・運用までを一人で回しています。Java / JavaScript の実務経験をベースに、Swift・LLM API・自動化基盤まで一気通貫で扱います。
 
-**実績ハイライト**：App Store リリース **7 本** ／ 個人開発 **10+ 本**（開発中含む） ／ クライアント向け業務自動化 **3 件**
+| App Store リリース | 個人開発 | 業務自動化（クライアント向け） | 技術記事（Zenn） |
+|:---:|:---:|:---:|:---:|
+| **7 本** | **10+ 本**（開発中含む） | **3 件** | **6 本** |
 
 ---
 
-## 📱 App Store リリース済み
+## 🧭 2つの軸
+
+| 軸 | 何をしているか | 代表的な成果 |
+|----|---------------|-------------|
+| **① iOS アプリ開発** | 単機能ユーティリティを企画からリリース・ASO・改善まで運用。ローカル完結・プライバシー重視を標準アーキテクチャとして横展開 | App Store 7本（★5.0 × 2本）、設計判断を「意思決定ログ」として Zenn で公開 |
+| **② LLM 自動化** | LLM を「人が承認する前提」で業務フローに組み込み、品質ゲート・テスト・運用手順まで含めて定着させる | 人間承認付き SNS 投稿エンジン（GitHub Actions 8ワークフロー／テスト約120件）、クライアント向け GAS 自動化 |
+
+---
+
+## 📱 軸①：App Store リリース済みアプリ
 
 すべて **ローカル完結・プライバシー重視**（通信ゼロ・SwiftData によるオンデバイス保存）を基本指針としています。
 
@@ -21,6 +32,28 @@
 | [**家づくり管理** — ハウスメーカー比較](https://apps.apple.com/jp/app/%E5%AE%B6%E3%81%A5%E3%81%8F%E3%82%8A%E7%AE%A1%E7%90%86-%E3%83%8F%E3%82%A6%E3%82%B9%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E6%AF%94%E8%BC%83/id6775920878) | v1.1.0 | ライフスタイル · ユーティリティ | SwiftUI · SwiftData · WidgetKit · PDFKit · Speech/AVFoundation | ハウスメーカーの比較検討・打合せ記録・図面ピンチズーム・端末内AIによる音声文字起こし |
 | [**そなえメモ** — 非常食の備蓄とローリングストック管理](https://apps.apple.com/jp/app/%E3%81%9D%E3%81%AA%E3%81%88%E3%83%A1%E3%83%A2-%E9%9D%9E%E5%B8%B8%E9%A3%9F%E3%81%AE%E5%82%99%E8%93%84%E3%81%A8%E3%83%AD%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E7%AE%A1%E7%90%86%E3%82%A2%E3%83%97%E3%83%AA/id6783843695) | v1.1.0 | ユーティリティ · ライフスタイル | SwiftUI · SwiftData · UserNotifications | 非常食・防災備蓄の賞味期限管理とローリングストック支援。備蓄診断カード・毎月の点検日通知・消費レシピ検索 |
 | [**つむぐノート** — エンディングノート・自分史・やりたいこと](https://apps.apple.com/jp/app/%E3%81%A4%E3%82%80%E3%81%90%E3%83%8E%E3%83%BC%E3%83%88-%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%8E%E3%83%BC%E3%83%88-%E8%87%AA%E5%88%86%E5%8F%B2-%E3%82%84%E3%82%8A%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8/id6784717709) | v1.1 | ライフスタイル · ユーティリティ | SwiftUI · SwiftData · LocalAuthentication · PDFKit · StoreKit 2 | 端末内完結・Face IDロックのエンディングノート＆自分史。デジタル庁デザインシステム準拠・iPad対応 |
+
+**設計・品質の取り組み**
+- 6本で共通化した「ローカル完結アーキテクチャ」（SwiftUI × SwiftData、MVVM）
+- TDD／Swift Testing によるルール・永続化・マイグレーションの自動テスト（SwiftData V1〜V5 の段階的マイグレーション）
+- 設計判断は ADR（意思決定記録）として文書化 → [コミコム設計書・ADR](https://github.com/HiromuMorisaki/hiromu)
+
+---
+
+## ⚙️ 軸②：LLM 自動化・業務ワークフロー
+
+| プロジェクト | 内容 | 主要技術 |
+|------------|------|---------|
+| [**人間承認付き SNS 投稿エンジン**](https://github.com/HiromuMorisaki/llm-post-approval-engine) | LLM が下書きを生成 → 人がスプレッドシートで承認 → 承認分だけを X / Threads へ配信。プロンプトをファイルでバージョン管理し、文字数・URL・表現ルールを品質ゲートで自動チェック。投稿後の指標も自動取得して改善に回す | Python · Gemini API · GitHub Actions（8ワークフロー）· Google Sheets API · pytest（約120件） |
+| **AI ニュース・キュレーション** | Zenn 等から AI/IT の最新記事を定期取得し、関心属性に合わせて LLM で要約 → Discord へ自動配信 | n8n · LLM API |
+| **クライアント向け業務自動化（GAS）** | ① 自動車整備会社：受信メールの事故写真を規定レイアウトで自動プリント<br>② ショールーム用マッピング：スプレッドシートのエリア名・商品名・位置情報から PowerPoint へ等間隔配置<br>③ 社内の勤怠・研修管理ツールの改修 | Google Apps Script · Gmail · Slides / Sheets |
+| **Slack 筋トレ継続支援** | 出筋／退筋スタンプ記録・ダッシュボード・週次まとめ | Slack API · GAS |
+| **RAG チャットボット** | 書籍ハンズオンで RAG チャットボットを5本構築し、検索・チャンク設計を実践 | Dify |
+
+**LLM を業務に入れるときの方針**
+- **人が最後に承認する**：生成と公開を分け、誤情報・炎上リスクを人のレビューで止める
+- **プロンプトはコードと同じ扱い**：リポジトリでバージョン管理し、変更理由を残す
+- **品質はルールで機械判定**：LLM の出力を品質ゲートとテストで検査してから人に渡す
 
 ---
 
@@ -36,17 +69,20 @@
 ![Xcode](https://img.shields.io/badge/Xcode-147EFB?style=flat&logo=xcode&logoColor=white)
 ![XcodeGen](https://img.shields.io/badge/XcodeGen-grey?style=flat)
 
-**AI / 自動化**  
-![Claude API](https://img.shields.io/badge/Claude_API-D97757?style=flat&logo=anthropic&logoColor=white)
+**LLM / 自動化**  
 ![Gemini API](https://img.shields.io/badge/Gemini_API-8E75B2?style=flat&logo=googlegemini&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
 ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat&logo=n8n&logoColor=white)
 ![Dify](https://img.shields.io/badge/Dify-1C64F2?style=flat)
 ![Apps Script](https://img.shields.io/badge/Google_Apps_Script-4285F4?style=flat&logo=googleappsscript&logoColor=white)
 
+**AI 開発ツール**  
+![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat&logo=anthropic&logoColor=white)
+
 **Web / Script**  
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 ![Vue.js](https://img.shields.io/badge/Vue_3-4FC08D?style=flat&logo=vuedotjs&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 
 **その他**  
 ![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=openjdk&logoColor=white)
@@ -57,26 +93,14 @@
 
 ---
 
-## ⚙️ 業務自動化・AIワークフローの実績
-
-| 技術 | 内容 |
-|------|------|
-| **n8n** | Zenn 等から AI/IT の最新記事を定期取得し、自分の関心属性に合わせて AI で要約 → Discord へ自動配信するキュレーションパイプラインを構築・運用 |
-| **Google Apps Script** | 外部クライアント向けの業務自動化を複数構築：<br>① 自動車整備会社で、受信メールの事故写真を規定レイアウトで自動プリント<br>② スプレッドシートのエリア名・商品名・位置情報から PowerPoint へオブジェクトと名称を等間隔配置するショールーム用マッピングツール<br>③ 社内の勤怠・研修管理ツールの改修<br>④ Slack + GAS 筋トレ継続支援システム（出筋/退筋スタンプ記録・ダッシュボード・週次まとめ） |
-| **Python** | X・Threads 向けマルチプラットフォーム自動投稿スクリプト・画像パイプラインの構築・運用 |
-| **Dify** | 書籍ハンズオンで RAG チャットボットを5本構築し、RAG 構成の設計を実践 |
-
----
-
 ## 🚧 開発中・プロトタイプ
 
 | プロジェクト | 概要 | 主要技術 |
 |------------|------|---------|
-| **コミコム**（App Store 提出準備中） | Amazon・楽天・Yahoo! を横断し、送料・ポイント込みの「実質最安」を比較する iOS アプリ。Safari 拡張・セール時期の買い時アドバイス | SwiftUI · SwiftData ＋ **Supabase / サーバーサイド（フルスタック構成）** |
+| **コミコム**（App Store 提出準備中） | Amazon・楽天・Yahoo! を横断し、送料・ポイント込みの「実質最安」を比較する iOS アプリ。Safari 拡張・セール時期の買い時アドバイス。[設計書・ADR](https://github.com/HiromuMorisaki/hiromu) | SwiftUI · SwiftData ＋ **Supabase / サーバーサイド（フルスタック構成）** |
 | **現金主義** | 現金貯金をゲーミフィケーションで楽しくする育成アプリ | SwiftUI · SwiftData · StoreKit 2 · CloudKit · Swift Charts · HealthKit |
 | **スパイを見抜け**（App Store 審査中） | 4〜6人で1台のiPhoneを囲んで遊ぶ対面パーティゲーム。全11種・通信ゼロ・AI 不使用 | SwiftUI · SwiftData |
-| **firekeeper-swarm** | ワンサム・サバイバルゲーム試作（iOS向け片手操作アクション） | Swift · SpriteKit |
-| [**portfolio-hub**](https://github.com/HiromuMorisaki/portfolio-hub) | 本ポートフォリオサイト（アプリ別ケーススタディ・アーキ図） | Vue 3 · TypeScript |
+| **firekeeper-swarm** | ワンサム・サバイバルゲーム試作（iOS向け片手操作アクション）。SwiftData V1〜V5 マイグレーション、自動テスト37件 | Swift · SpriteKit · Swift Testing |
 
 ---
 
@@ -84,10 +108,13 @@
 
 Zenn にて **「意思決定ログ」** シリーズを連載中。設計上の選択・つまずき・解決の過程を公開しています。
 
+**iOS アプリ開発**
 - [個人開発アプリ6本で標準化した「ローカル完結アーキテクチャ」— SwiftUI × SwiftData 意思決定ログ](https://zenn.dev/hinaridake/articles/ios-local-first-architecture)
-- [AI に任せた所、自分で握った所 — 個人開発6本で見えた「線引き」 | 意思決定ログ](https://zenn.dev/hinaridake/articles/ai-development-boundary)
 - [IT用語を「かるた」で覚えるiOSアプリを出した — 課金の軸・出題の公平性・提出でハマった所 | 意思決定ログ](https://zenn.dev/hinaridake/articles/it-karuta-release-decisions)
 - [個人開発のiOSアプリ4本、App Storeの検索だけで90日。数字を全部出します](https://zenn.dev/hinaridake/articles/indie-ios-apps-90days-numbers)
+
+**AI 活用・LLM**
+- [AI に任せた所、自分で握った所 — 個人開発6本で見えた「線引き」 | 意思決定ログ](https://zenn.dev/hinaridake/articles/ai-development-boundary)
 - [家づくりアプリのコラム45本をAIに点検させたら、点検役のAIも間違えていた](https://zenn.dev/hinaridake/articles/ai-content-fact-check-housing-app)
 - [AIに50人のユーザーを演じさせて7回調査したアプリが、90日で11ダウンロードだった](https://zenn.dev/hinaridake/articles/ai-persona-survey-vs-reality)
 
