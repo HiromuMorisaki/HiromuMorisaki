@@ -37,7 +37,7 @@
 **設計・品質の取り組み**
 - 6本で共通化した「ローカル完結アーキテクチャ」（SwiftUI × SwiftData、MVVM）
 - TDD／Swift Testing によるルール・永続化・マイグレーションの自動テスト（SwiftData V1〜V5 の段階的マイグレーション）
-- 設計判断は ADR（意思決定記録）として文書化 → [コミコム設計書・ADR](https://github.com/HiromuMorisaki/hiromu)
+- 設計判断は ADR（意思決定記録）として文書化 → [コミコム設計書・ADR](https://github.com/HiromuMorisaki/komikomu-design)
 
 ---
 
@@ -98,7 +98,7 @@
 
 | プロジェクト | 概要 | 主要技術 |
 |------------|------|---------|
-| **コミコム**（App Store 提出準備中） | Amazon・楽天・Yahoo! を横断し、送料・ポイント込みの「実質最安」を比較する iOS アプリ。Safari 拡張・セール時期の買い時アドバイス。[設計書・ADR](https://github.com/HiromuMorisaki/hiromu) | SwiftUI · SwiftData ＋ **Supabase / サーバーサイド（フルスタック構成）** |
+| **コミコム**（App Store 提出準備中） | Amazon・楽天・Yahoo! を横断し、送料・ポイント込みの「実質最安」を比較する iOS アプリ。Safari 拡張・セール時期の買い時アドバイス。[設計書・ADR](https://github.com/HiromuMorisaki/komikomu-design) | SwiftUI · SwiftData ＋ **Supabase / サーバーサイド（フルスタック構成）** |
 | **現金主義** | 現金貯金をゲーミフィケーションで楽しくする育成アプリ | SwiftUI · SwiftData · StoreKit 2 · CloudKit · Swift Charts · HealthKit |
 | **オサケノミタイ**（App Store 審査待ち） | 飲んだ日本酒を記録し、お店のメニューを前に「前においしかった一杯」を思い出して次の一杯選びに役立てる記録帳。iOS 版と並行して、写真読み取り付きの Web／PWA 版を設計・実装中 | SwiftUI · SwiftData（iOS）／ Next.js · TypeScript · IndexedDB · Playwright（Web） |
 | **firekeeper-swarm** | ワンサム・サバイバルゲーム試作（iOS向け片手操作アクション）。SwiftData V1〜V5 マイグレーション、自動テスト37件 | Swift · SpriteKit · Swift Testing |
